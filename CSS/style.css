@@ -1,0 +1,582 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: 'Roboto', sans-serif;
+}
+.navbar {
+    padding: 8px;
+    margin: 8px;
+    margin-top: 15px;
+}
+.navbar h2 {
+    color: red;
+    float: left;
+    margin-right: 570px;
+    margin-left: 100px;
+}
+.navbar ul {
+    list-style-type: none;
+}
+.navbar ul li {
+    float: left;
+    margin-inline: 5px;
+}
+.navbar ul li a {
+    text-decoration: none;
+    font-size: larger;
+    color: white;
+}
+.navbar .home {
+    color: red;
+}
+.navbar ul li a:hover {
+    color: red;
+}
+.clear-fix {
+    clear: both;
+}
+.landing {
+    padding: 8px;
+    margin: 8px;
+    background-image: url("../images/hero\ img.jpg");
+    min-height: 100vh;
+    background-size: cover;
+    position: relative;
+}
+.landing .overlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(0 0 0 / 75%);
+}
+.landing .text {
+    text-align: center;
+    margin-top: 200px;
+}
+.landing .text h2 {
+    color: white;
+    font-size: 30px;
+}
+.landing .text h1 {
+    color: rgb(228, 44, 75);
+    margin-top: 45px;
+    font-size: 55px;
+}
+.animated-text {
+    color: white;
+    font-size: 33px;
+    font-weight: lighter;
+    margin-top: 10px;
+}
+
+.animated-text span {
+    position: relative;
+}
+.animated-text span::before {
+    content: "";
+    color: white;
+    animation: words 7s infinite;
+}
+.animated-text span::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 100%;
+    border-left: 2px solid white;
+    right: -8px;
+    animation: cursor 1s infinite;
+}
+@keyframes cursor {
+    to{
+        border-left: 2px solid transparent ;
+    }
+}
+@keyframes words {
+    0%,50% {
+        content: "Designer..";
+    }
+    50%,100% {
+        content: "Developer..";
+    }
+}
+.about {
+    margin: 8px;
+    padding: 8px;
+}
+.about .images {
+    float: left;
+}
+.about img {
+    width: 350px;
+    margin-left: 150px;
+    margin-top: 80px;
+    position: relative;
+    border-radius: 5px;
+}
+.about .image::before {
+    content: "";
+    position: absolute;
+    left: 120px;
+    top: 65px;
+    width: 350px;
+    height: 410px;
+    border: 6px solid rgb(70, 69, 69);
+    border-radius: 5px;
+}
+.about .image{
+    position: relative;
+}
+.about .overlay {
+    background-color: rgb(0 0 0 / 75%);
+    width: 350px;
+    margin-left: 150px;
+    bottom: 0;
+    height: 430px;
+    position: absolute;
+    opacity: 0;  
+    transition: opacity 500ms ease-in; 
+}
+.about .overlay:hover {
+    opacity: 1;
+}
+.about .overlay ul{
+    padding-left: 100px;
+    padding-top: 200px;
+}
+.about .overlay li {
+    list-style-type: none;
+    display: inline-block;
+    margin-inline: 5px;
+} 
+.about .overlay li i {
+    font-size: 25px;
+    color: white;
+}
+.about .overlay li i:hover{
+    color: rgb(228, 44, 75);
+}
+.about .text {
+    margin-top: 70px;
+    margin-left: 120px;
+    width: 600px;
+    float: left;
+}
+.about .text h3 {
+    font-size: 40px;
+    word-spacing: 5px;
+    position: relative;
+    margin-left: 20px;
+}
+.about .text h3::before {
+    content: "";
+    position: absolute;
+    left: -20px;
+    top: 8px;
+    width: 5px;
+    height: 65%;
+    background-color: rgb(228, 44, 75);
+}
+.about .text p {
+    color: rgb(70, 69, 69);
+    line-height: 26px;
+    font-size: 16px;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.about .text .head {
+    border-bottom: 1px dashed rgb(70, 69, 69);
+}
+.about .profile-about {
+    margin-top: 20px;
+}
+.about .profile-about ul {
+    list-style: none;
+}
+.profile-about ul li:nth-child(2n+1) {
+    float: left;
+    width: 40%; 
+}
+.about .profile-about ul span {
+    color: #333333;
+    font-weight: 500;
+}
+.about .profile-about ul li {
+    color: #555555;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+.profile-about li a {
+    color: #555555;
+}
+.about button {
+    background-color: rgb(228, 44, 75);
+    padding: 15px 25px;
+    margin-inline: 8px;
+    border-radius: 5px;
+    margin-top: 10px;
+    border: 1px solid transparent;
+}
+.about button a { 
+    color: white;
+    font-size: 19px;
+    text-decoration: none;
+} 
+.about button i { 
+   color: white;
+   margin-left: 6px;
+   font-size: 25px;
+}
+.heading h1 {
+    padding-top: 70px;
+   color: #252525;
+   text-align: center;
+   margin: 70px 0;
+   position: relative;
+   width: fit-content;
+   margin-inline: auto;
+   padding-bottom: 22px;
+   border-bottom: 1px solid rgb(228, 44, 75);
+}
+.heading h1::before {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 8px;
+    background-color: rgb(228, 44, 75);
+}
+.heading h1::after {
+    content: "";
+    position: absolute;
+    width: 70px;
+    height: 1px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: -8px;
+    background-color: rgb(228, 44, 75);
+}
+.services {
+    background-color: #eeeeee;
+    margin-top: 50px;
+}
+.services .cards {
+    display: flex;
+    justify-content: center;
+    margin-top: 50px;
+}
+.services .card {
+    float: left;
+    width: 270px;
+    position: relative;
+    /* margin-top: 40px; */
+    margin-bottom: 70px;
+    padding-top: 90px;
+    padding-bottom: 50px;
+    transition: background-color 300ms ease-in;
+}
+.services .card:hover{
+    background-color: white;
+    border: 2px solid rgb(236, 236, 236);
+    border-radius: 5px;
+}
+.services .card i {
+    font-size: 30px;
+    color: rgb(228, 44, 75);
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 40px;
+    transition: scale 300ms ease-in;
+}
+.services .card:hover i{
+    scale: 1.2;
+}
+.services .card h2 {
+    text-align: center;
+    padding-top: 10px;
+    font-weight: normal;
+    color: #272727;
+}
+.services .card p {
+    text-align: center;
+    color: rgb(70, 69, 69);
+    line-height: 26px;
+    font-size: 16px;
+    margin-top: 10px;
+
+}
+.portfolio .list ul {
+    display: flex;
+    justify-content: center;
+}
+.portfolio .list ul li {
+    float: left;
+    list-style: none;
+    margin-left: 20px;
+    margin-bottom: 40px;
+}
+.portfolio .list ul li a {
+    text-decoration: none;
+    color:#272727;
+    font-size: 19px;
+}
+.portfolio .list .all {
+    color: rgb(228, 44, 75);
+}
+.portfolio .cards {
+    margin-inline: 40px;
+    margin-top: 35px;
+    margin-bottom: 60px;
+}
+.portfolio .card {
+    float: left;
+    margin: 15px;
+    position: relative;
+}
+.portfolio .card img {
+    width: 389px;
+}
+.portfolio .overlay {
+    background-color: rgb(0 0 0 / 70%);
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 500ms ease-in;
+}
+.portfolio .card:hover .overlay {
+    opacity: 1;
+}
+.lists {
+    background-color: rgb(236, 236, 236);
+    margin-top: 90px;
+}
+.lists ul {
+    display: flex;
+    justify-content: center;
+}
+.lists ul li {
+    float: left;
+    list-style: none;
+    text-align: center;
+    margin-inline: 50px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    padding: 40px;
+}
+.lists ul li i {
+    color: rgb(228, 44, 75);
+    font-size: 26px;
+    margin-bottom: 25px;
+}
+.lists ul li h3 {
+    color:#333333;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+.lists ul li p {
+    color: #555555;
+    font-weight: 500;
+}
+.feedback {
+    margin-bottom: 120px;
+}
+.feedback .card{
+    margin-inline: auto;
+    width: 750px;
+    background-color: rgb(236, 236, 236);
+    border-radius: 5px;
+    padding: 15px 50px;
+    position: relative;
+    padding-bottom: 50px;
+}
+.feedback .card i {
+    color: #555555;
+    font-size: 12px;
+}
+.feedback .card p {
+    color: #4b4a4a;
+    font-style: italic;
+    font-size: 18px;
+    line-height: 22px;
+    margin-top: 8px;
+    font-weight: 300;
+}
+.feedback .card h3 {
+    color: #333333;
+    margin-bottom: 10px;
+}
+.feedback span {
+    color: rgb(240, 209, 33);
+    padding-top: 10px;
+    font-size: 18px;
+}
+.feedback .text {
+    margin-top: 70px;
+    margin-left: 150px;
+}
+.feedback img {
+    position: absolute;
+    top: 50px;
+    border-radius: 50%;
+    z-index: 3;
+    width: 120px;
+}
+.feedback .card::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    border: 110px solid;
+    border-color: rgb(228, 44, 75) transparent transparent rgb(228, 44, 75);
+}
+.circle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    width: 14px;
+    height: 14px;
+    border: 2px solid rgb(228, 44, 75);
+    bottom: -25px;
+}
+.circle::before {
+    position: absolute;
+    content: "";
+    width: 28px;
+    height: 10px;
+    border-radius: 20%;
+    background-color: rgb(228, 44, 75);
+    right: 30px;
+    top: 0;
+}
+.blog {
+    background-color: rgb(236, 236, 236);
+}
+.blog .cards {
+    margin-left: 70px;
+    padding-bottom: 50px;
+}
+.blog .card {
+    width: 380px;
+    float: left;
+    margin-left: 20px;
+    border-radius: 5px;
+    transition: background-color 400ms ease-in;
+}
+.blog .card:hover{
+    background-color: white;
+}
+.blog .card img {
+    width: 100%;
+}
+.blog .text {
+    padding: 30px;
+}
+.blog .card p {
+    color: #555555;
+    margin-top: 10px;
+    font-size: 16px;
+}
+.blog .card h4 {
+    color: #333333;
+    font-size: 20px;
+    font-weight: 500;
+    margin-top: 6px;
+}
+.blog .card h6 {
+    color: #333333;
+    font-size: 17px;
+    font-weight: 400;
+    margin-top: 6px;
+}
+.blog .card iframe {
+    width: 100%;
+    height: 220px;
+}
+.contact {
+    margin-bottom: 80px;
+}
+.contact .form {
+    margin-inline: 250px; 
+    width: 800px;
+}
+.contact .form #name,
+.contact .form #email {
+    width: 45%;
+    display: inline-block;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+}
+.contact textarea {
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+}
+.contact .form #subject {
+    width: 94%;
+    margin: 15px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: #fff;
+    background-image: none;
+    border: 1px solid #ccc;
+}
+.contact button {
+    padding: 13px;
+    background-color: rgb(228, 44, 75);
+    border: transparent;
+    border-radius: 8px;
+    color: white;
+    margin-left: 12px;
+}
+.contact button:hover {
+    background-color: red;
+}
+.foot {
+    background-color: #333333;
+    padding: 80px 0;
+}
+.foot ul {
+    margin-left: 580px;
+}
+.foot ul li {
+    float: left;
+    list-style: none;
+    margin-left: 20px;
+}
+.foot ul i {
+    color: white;
+    font-size: 20px;
+    transition: color 200ms ease-in;
+}
+.foot ul i:hover {
+    color: rgb(228, 44, 75);
+}
+.foot ul li a {
+    text-decoration: none;
+}
+.foot p {
+    margin-top: 20px;
+    text-align: center;
+    color: white;
+}
+.foot span {
+    color: rgb(228, 44, 75);
+}
